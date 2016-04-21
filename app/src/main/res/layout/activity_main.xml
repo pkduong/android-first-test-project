@@ -12,16 +12,60 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Testing text size"
-        android:id="@+id/textView"
-        android:layout_below="@+id/textView2"
+        android:text="Hello World"
+        android:id="@+id/tvMain"
         android:layout_alignParentLeft="true"
         android:textSize="45sp"
         android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSize"
+        android:layout_below="@+id/tvMain"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:autoText="false"
+        android:editable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:text="25"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Size"
+        android:id="@+id/btnSetSize"
+        android:layout_below="@+id/txtSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:textColor="#0b08f3"
+        android:enabled="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtText"
+        android:layout_below="@+id/btnSetSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtSize"
+        android:layout_alignEnd="@+id/txtSize"
+        android:text="Enter a text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Text"
+        android:id="@+id/btnSetText"
+        android:layout_below="@+id/txtText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="italic"
+        android:theme="@style/AppTheme" />
 </RelativeLayout>
